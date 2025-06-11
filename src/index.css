@@ -1,0 +1,46 @@
+/* src/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+  font-weight: 400;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  color: #2d3748;
+}
+
+.App {
+  background: white;
+  padding: 1rem 3rem 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body.night {
+  background: linear-gradient(to bottom, #0b1523, #1a263a);
+  color: #ffffff;
+}
+
+body.day .App {
+  background: linear-gradient(135deg, #ffffff, #e6f9fb);
+}
+
+body.night .App {
+  background: linear-gradient(135deg, #203a57, #345b7a);
+}

@@ -1,0 +1,67 @@
+/* src/Components/WeatherDisplay.css */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 16px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.weather-meta {
+    line-height: 1.4;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.date {
+    text-transform: capitalize;
+}
+
+.weather-main-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.weather-icon-large {
+    width: 80px;
+    height: 80px;
+}
+
+.feels-like {
+    padding-bottom: 15px;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.detail-row-sun {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-sun {
+    width: 45px;
+    height: 45px;
+}
