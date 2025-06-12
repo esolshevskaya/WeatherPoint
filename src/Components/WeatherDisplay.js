@@ -43,7 +43,7 @@ const WeatherDisplay = ({ weatherData }) => {
 
             <div className="weather-details">
                 <div className="detail-row">
-                    <img src="/assets/icons/humidity.png" alt="Влажность" className="icon"/>
+                    <img src={process.env.PUBLIC_URL + '/assets/icons/humidity.png'} alt="Влажность" className="icon" />
                     <span>Влажность: {humidity}%</span>
                 </div>
                 <div className="detail-row">
