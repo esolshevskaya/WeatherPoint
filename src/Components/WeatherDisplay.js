@@ -33,11 +33,8 @@ const WeatherDisplay = ({ weatherData }) => {
 
             <div className="weather-main-row">
                 <h2 className="temperature">{temp.toFixed(1)}°C</h2>
-                <img
-                    src={`/assets/${weatherImage}`}
-                    alt={weatherDescription}
-                    className="weather-icon-large"
-                />
+<img src={process.env.PUBLIC_URL + `/assets/${weatherImage}`} alt={weatherDescription} className="weather-icon-large" />
+
             </div>
 
             <div className="feels-like">
