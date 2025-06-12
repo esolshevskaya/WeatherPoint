@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/esolshevskaya/WeatherPoint/static/css/main.c9f4f98d.css",
+    "main.js": "/esolshevskaya/WeatherPoint/static/js/main.eb31ba38.js",
+    "index.html": "/esolshevskaya/WeatherPoint/index.html",
+    "main.c9f4f98d.css.map": "/esolshevskaya/WeatherPoint/static/css/main.c9f4f98d.css.map",
+    "main.eb31ba38.js.map": "/esolshevskaya/WeatherPoint/static/js/main.eb31ba38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9f4f98d.css",
+    "static/js/main.eb31ba38.js"
+  ]
+}
