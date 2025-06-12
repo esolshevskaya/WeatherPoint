@@ -1,4 +1,3 @@
-// src/Components/MapDisplay.js
 import React from 'react';
 
 const MapDisplay = ({ lat, lon, city }) => {

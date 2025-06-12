@@ -1,4 +1,3 @@
-// src/Components/WeatherDisplay.js
 import React from 'react';
 import './WeatherDisplay.css';
 import { mapWeatherToImage } from '../utils/mapWeatherToImage';

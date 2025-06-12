@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+## Weather Forecast App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Ссылка на веб-приложение:** 
 
-## Available Scripts
+### Описание проекта
+Одностраничное веб-приложение для просмотра прогноза погоды по названию города.
+Проект разработан на **React** и демонстрирует мои навыки работы с REST API, управления состоянием, адаптивной вёрстки и реализации пользовательского взаимодействия.
 
-In the project directory, you can run:
+### Технологии
+* **React** — построение интерфейса, управление состоянием
+* **JavaScript (ES6+)** — логика приложения, взаимодействие с API
+* **HTML5, CSS3** — семантическая разметка, стилизация, адаптивность
+* **OpenWeatherMap API** — получение прогноза погоды и координат
+* **Axios** — HTTP-запросы к OpenWeatherMap API
+* **OpenStreetMap (через iframe)** — отображение карты города
+* **React Select (AsyncSelect)** — автокомплит поиска городов с асинхронной загрузкой
+* **PropTypes** — валидация пропсов компонентов
+* **Intl API** — русскоязычная локализация названий стран и городов и форматирование времени
+* **Date / Math API** — работа с UNIX-временем и текущими датами
+* **LocalStorage** — кэширование сохранённых городов
+* **normalize.css** — сброс базовых стилей браузера
+* **Собственные утилиты (`mapWeatherToImage`, `formatLocalTime`)** — логика отображения и форматирования данных о погоде
 
-### `npm start`
+### UX/UI
+* Адаптивная вёрстка: корректное отображение от мобильных до десктопов
+* Интуитивный UI: поисковая строка, кнопка сохранения, информативные карточки
+* Русскоязычный интерфейс: локализация названий, формат времени
+* Структурированное отображение данных:
+  * Температура и "ощущается как"
+  * Влажность, скорость ветра
+  * Время восхода и заката
+* Иконки погодных условий (день/ночь, облачность, осадки и пр.)
+* Выпадающий список с кастомными стилями и подсветкой выбора
+* Карта с фокусом на текущем городе
+* Тема интерфейса меняется на "ночную", если в городе сейчас ночь
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Фичи
+* Автоматическое определение последнего выбранного города при загрузке страницы
+* Автоматическое переключение темы (день/ночь) в зависимости от времени суток в городе
+* Асинхронная автоподстановка городов с фильтрацией дубликатов
+* Кэширование списка сохранённых городов в localStorage
+* Интерактивная карта с меткой выбранного города
+* Поддержка русского языка в названии городов и стран
+* Обработка ошибок при запросах и недопустимом вводе
+* Кроссбраузерная поддержка (Chrome, Safari, Firefox, Edge, Yandex)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Функционал
+* Поиск города с автоподсказкой (OpenWeatherMap Geo API)
+* Получение прогноза погоды по координатам выбранного города
+* Сохранение городов в избранное для быстрого доступа
+* Выбор сохранённого города из списка и повторный запрос прогноза
+* Форматирование времени и даты с учётом часового пояса
+* Генерация динамического URL для карты на основе координат
+* Переключение темы интерфейса на основе времени (восход/закат)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Обо мне
+Меня зовут Елена, я начинающая фронтенд-разработчица.
+Этот проект — часть моего портфолио, где я демонстрирую умение создавать чистый, отзывчивый и удобный для пользователя интерфейс.
+Я стремлюсь к высокому качеству кода и постоянно совершенствуюсь.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Связаться со мной:**  
+Email: o-alena-o@yandex.ru  
+GitHub: https://github.com/esolshevskaya

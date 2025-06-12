@@ -1,4 +1,3 @@
-// src/Components/CitySearch.js
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import AsyncSelect from 'react-select/async';
@@ -9,7 +8,6 @@ const API_KEY = '92b3a1df70c04ac1a61d74a5cc9b2e58';
 const CitySearch = ({
                         onCitySelect,
                         selectedOption: externalSelectedOption,
-                        width
                     }) => {
     const [selectedOption, setSelectedOption] = useState(null);
 

@@ -1,4 +1,3 @@
-// src/Components/SavedLocations.js
 import React from 'react';
 import './SavedLocations.css';
 import axios from "axios";
